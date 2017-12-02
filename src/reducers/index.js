@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 
+import CommentsReducer from './commentsReducer';
+
 const rootReducer = combineReducers({
-	comments: (state = []) => state,
+	comments: CommentsReducer,
 	router: routerReducer
 });
 

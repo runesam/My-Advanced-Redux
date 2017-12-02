@@ -5,6 +5,7 @@ import CommentsList from './commentsList';
 export default () => (
 	<div>
 		<CommentBox />
+		<br />
 		<CommentsList />
 	</div>
 );

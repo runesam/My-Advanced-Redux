@@ -4,7 +4,7 @@ import { configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import Comments from './comments';
-import CommentBox from './commentBox';
+import { CommentBox } from './commentBox';
 import { CommentsList } from './commentsList';
 
 configure({ adapter: new Adapter() });
@@ -25,7 +25,7 @@ configure({ adapter: new Adapter() });
 describe('Comment Box', () => {
 	let component;
 	beforeEach(() => {
-		component = mount(<CommentBox />);
+		component = mount(<CommentBox saveComment={() => ''} />);
 	});
 	it('has the correct class name', () => {
 		const wrapper = component.find('form').first();

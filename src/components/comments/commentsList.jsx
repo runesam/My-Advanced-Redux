@@ -6,12 +6,12 @@ export class CommentsList extends Component {
 		if (!this.props.comments) {
 			return false;
 		}
-		return this.props.comments.map((comment, key) => <li key={key}>{comment}</li>);
+		return this.props.comments.map((comment, key) => <li className='list-group-item' key={key}>{comment}</li>);
 	}
 
 	render() {
 		return (
-			<ul className='comments-list'>
+			<ul className='comments-list list-group'>
 				{this.renderComments()}
 			</ul>
 		)
