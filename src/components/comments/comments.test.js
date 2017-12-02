@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-expressions */
+
 import React from 'react';
 import { expect } from 'chai';
 import { configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-import Comments from './comments';
+// import Comments from './comments';
 import { CommentBox } from './commentBox';
 import { CommentsList } from './commentsList';
 
@@ -29,7 +31,7 @@ describe('Comment Box', () => {
 	});
 	it('has the correct class name', () => {
 		const wrapper = component.find('form').first();
-		expect(wrapper.hasClass('comment-box')).to.be.true;
+		expect(wrapper.hasClass('comment-box')).to.be.equal(true);
 	});
 	it('has a text area', () => {
 		expect(component.find('textarea')).to.exist;

@@ -14,14 +14,14 @@ export class CommentsList extends Component {
 			<ul className='comments-list list-group'>
 				{this.renderComments()}
 			</ul>
-		)
+		);
 	}
 }
 
 function mapStateToProps(state) {
 	return {
 		comments: state.comments
-	}
+	};
 }
 
 export default connect(mapStateToProps)(CommentsList);

@@ -8,6 +8,7 @@ import {
 
 import Home from './home/home';
 import Comments from './comments/comments';
+
 const App = () => (
 	<div className='container'>
 		<Router>

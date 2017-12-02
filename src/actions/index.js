@@ -3,5 +3,5 @@ import {
 } from './types';
 
 export function saveComment(comment) {
-	return { type: SAVE_COMMENT, payload: comment}
+	return { type: SAVE_COMMENT, payload: comment };
 }

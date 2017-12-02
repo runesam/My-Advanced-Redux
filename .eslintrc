@@ -1,18 +1,21 @@
 {
-  "extends": [
-    "plugin:jsx-a11y/recommended"
-  ],
-  "env": {
-    "browser": true
-  },
+  "extends": ["rallycoding"],
   "rules": {
     "max-len": "off",
-    "no-useless-constructor": "off"
+    "no-useless-escape": "off",
+    "global-require": "off",
+    "react/no-multi-comp": "off",
+    "import/no-extraneous-dependencies": "off"
   },
   "globals": {
+    "navigator": true,
+    "window": true,
+    "document": true,
+    "fetch": true,
+    "XMLHttpRequest": true,
     "describe": true,
     "it": true,
-    "afterEach": true,
-    "window": true
+    "beforeEach": true,
+    "URL": true
   }
 }

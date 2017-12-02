@@ -24,5 +24,5 @@ describe('Reducers', () => {
 			expect(commentReducerReturn.length).to.equal(state.length + 1);
 			expect(commentReducerReturn[commentReducerReturn.length - 1]).to.equal(action.payload);
 		});
-	})
+	});
 });

@@ -1,4 +1,5 @@
 import { expect } from 'chai';
+
 import {
 	SAVE_COMMENT
 } from './types';
