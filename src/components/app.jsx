@@ -7,7 +7,7 @@ import {
 } from './common';
 
 import Home from './home/home';
-
+import Comments from './comments/comments';
 const App = () => (
 	<div className='container'>
 		<Router>
@@ -15,6 +15,7 @@ const App = () => (
 				<Header />
 				<Switch>
 					<Route exact path='/' component={Home} />
+					<Route path='/comments' component={Comments} />
 					<Route path='*' component={NoMatch} />
 				</Switch>
 			</div>
